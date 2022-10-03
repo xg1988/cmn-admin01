@@ -28,11 +28,7 @@ public class ViewController {
     @RequestMapping("/main")
     public ModelAndView main(UserDto userDto) {
         ModelAndView mv = new ModelAndView();
-        System.out.println("userDto : "+ userDto);
-        System.out.println("userDto : "+ userDto);
-        System.out.println("userDto : "+ userDto);
-        mv.addObject("userDto",userService.loginUser(userDto).get());
-        mv.setViewName("main");
+
         return mv;
     }
 
