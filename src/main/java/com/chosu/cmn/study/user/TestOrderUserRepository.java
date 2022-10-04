@@ -4,8 +4,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
+import java.util.Map;
 
 public interface TestOrderUserRepository extends JpaRepository<TestUser, Long> {
 
@@ -22,4 +24,6 @@ public interface TestOrderUserRepository extends JpaRepository<TestUser, Long> {
 
     Page<TestUser> findByName(String name, Pageable pageable);
 
+    @Query(value = "select * from User limit 1;", nativeQuery = true)
+    Map<String, Object> findRowRecord();
 }
