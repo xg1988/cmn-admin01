@@ -1,8 +1,7 @@
-package com.chosu.cmn.study.util;
+package com.chosu.cmn.study.listener;
 
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class MyEntityListener {

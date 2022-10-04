@@ -1,6 +1,6 @@
 package com.chosu.cmn.admin.querymethod;
 
-import com.chosu.cmn.study.user.TestUserRepository;
+import com.chosu.cmn.study.repository.TestUserRepository;
 import org.assertj.core.util.Lists;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

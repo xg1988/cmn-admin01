@@ -1,6 +1,6 @@
 package com.chosu.cmn.admin.querymethod;
 
-import com.chosu.cmn.study.user.TestOrderUserRepository;
+import com.chosu.cmn.study.repository.TestOrderUserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

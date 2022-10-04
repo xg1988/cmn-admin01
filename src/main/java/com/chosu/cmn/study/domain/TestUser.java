@@ -1,16 +1,10 @@
-package com.chosu.cmn.study.user;
+package com.chosu.cmn.study.domain;
 
 
-import com.chosu.cmn.study.util.Auditable;
-import com.chosu.cmn.study.util.MyEntityListener;
+import com.chosu.cmn.study.listener.Auditable;
 import lombok.*;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
-import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,9 +13,11 @@ import java.util.List;
 @Builder
 @Table(name="User", indexes = {@Index(columnList = "name")}, uniqueConstraints = {@UniqueConstraint(columnNames = {"email"})})
 @Entity
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 //@EntityListeners(value = {MyEntityListener.class, UserEntityListener.class})
 //@EntityListeners(value = AuditingEntityListener.class)
-public class TestUser extends BaseEntity implements Auditable {
+public class TestUser extends BaseEntity{
 
     @Id
     @GeneratedValue

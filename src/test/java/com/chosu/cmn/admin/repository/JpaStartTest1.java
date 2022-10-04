@@ -1,7 +1,7 @@
 package com.chosu.cmn.admin.repository;
 
 import com.chosu.cmn.admin.user.User;
-import com.chosu.cmn.study.user.TestBasicUserRepository;
+import com.chosu.cmn.study.repository.TestBasicUserRepository;
 import groovy.util.logging.Slf4j;
 import org.assertj.core.util.Lists;
 import org.junit.jupiter.api.Test;

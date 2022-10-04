@@ -1,4 +1,4 @@
-package com.chosu.cmn.study.user;
+package com.chosu.cmn.study.repository;
 
 import com.chosu.cmn.admin.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;

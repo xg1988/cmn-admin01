@@ -1,11 +1,9 @@
-package com.chosu.cmn.study.util;
+package com.chosu.cmn.study.listener;
 
 import com.chosu.cmn.admin.user.User;
 import com.chosu.cmn.study.support.BeanUtils;
-import com.chosu.cmn.study.user.UserHistory;
-import com.chosu.cmn.study.user.UserHistoryRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import com.chosu.cmn.study.domain.UserHistory;
+import com.chosu.cmn.study.repository.UserHistoryRepository;
 
 import javax.persistence.PreUpdate;
 

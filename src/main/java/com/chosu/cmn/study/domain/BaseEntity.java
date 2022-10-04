@@ -1,32 +1,19 @@
-package com.chosu.cmn.study.user;
+package com.chosu.cmn.study.domain;
 
+import com.chosu.cmn.study.listener.Auditable;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
 
-@Entity
-@NoArgsConstructor
 @Data
+@MappedSuperclass //상위클래스에서 사용한다
 @EntityListeners(value = AuditingEntityListener.class)
-public class UserHistory {
-
-    @Id
-    @GeneratedValue
-    private Long id;
-
-    private Long userId;
-
-    private String name;
-
-    private String email;
+public class BaseEntity implements Auditable {
 
     @CreatedDate
     private LocalDateTime createAt;

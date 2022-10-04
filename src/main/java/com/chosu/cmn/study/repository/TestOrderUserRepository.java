@@ -1,5 +1,6 @@
-package com.chosu.cmn.study.user;
+package com.chosu.cmn.study.repository;
 
+import com.chosu.cmn.study.domain.TestUser;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;

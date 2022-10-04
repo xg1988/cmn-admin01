@@ -1,7 +1,10 @@
 package com.chosu.cmn.admin.entity;
 
 
-import com.chosu.cmn.study.user.*;
+import com.chosu.cmn.study.domain.*;
+import com.chosu.cmn.study.repository.TestOrderUserRepository;
+import com.chosu.cmn.study.repository.TestUserRepository;
+import com.chosu.cmn.study.repository.UserHistoryRepository;
 import groovy.util.logging.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
